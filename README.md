@@ -1,6 +1,8 @@
 # bazzite-waydroid-gamemode
 Utility scripts for Bazzite
 
+Note that I still need to test the script. If you use it, it is your sole responsibility.
+
 ## How to use Waydroid on GameMode
 
 Follow these steps.
