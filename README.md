@@ -1,9 +1,7 @@
-# cachyos-waydroid-gamemode
-Utility scripts for CachyOS
+# bazzite-waydroid-gamemode
+Utility scripts for Bazzite
 
-But now, there is only the Waydroid scripts.
-
-## How to use Waydroid on GameMode 
+## How to use Waydroid on GameMode
 
 Follow these steps.
 
@@ -11,34 +9,38 @@ Follow these steps.
 
 The following packages are required to run this script:
 
-- **cage**: Runs apps/games on GameMode
-- **wlr-randr**: Used for your display resolution.
+- **cage**: Runs apps/games in a dedicated Wayland session
+- **wlr-randr**: Used for display mode handling
+- **waydroid**: Android container and launcher
 
-Install both packages at once:
+### Install on Bazzite
+
+Bazzite is an atomic Fedora-based system, so install packages with `rpm-ostree` on the host, or with `toolbox` if you prefer keeping them containerized.
 
 ```bash
-sudo pacman -S cage wlr-randr
+sudo rpm-ostree install cage wlr-randr waydroid
 ```
 
-1. **Download the Script**  
-    Download the `Waydroid-cage.sh` file to your Desktop:
+If you already manage Waydroid another way, make sure `cage` and `wlr-randr` are available in the environment where you run the script.
 
-    ```bash
-    cd ~/Desktop
-    wget https://raw.githubusercontent.com/SwallowKOR/cachyos-waydroid-gamemode/refs/heads/main/waydroid-cage.sh
-    ```
+1. **Download the Script**  
+   Download the `waydroid-cage.sh` file to your Desktop or any folder you prefer:
+
+   ```bash
+   cd ~/Desktop
+   wget https://raw.githubusercontent.com/lieserlV/bazzite-waydroid-gamemode/main/waydroid-cage.sh
+   ```
 
 2. **Give Execute Permission**  
-    Make the script executable:
+   Make the script executable:
 
-    ```bash
-    chmod +x Waydroid-cage.sh
-    ```
+   ```bash
+   chmod +x waydroid-cage.sh
+   ```
 
-3. Add this script to Steam.
+3. **Add the script to Steam**
 
 Done!
 
-> ⚠️ **Note:** This script is designed to work on **Cachy OS handheld GameMode** with **Cage**.  
+> ⚠️ **Note:** This script is designed for **Bazzite** with **Cage** and **Waydroid**.  
 > Make sure Waydroid is installed and properly set up before running this script.
-
