@@ -15,13 +15,7 @@ The following packages are required to run this script:
 
 ### Install on Bazzite
 
-Bazzite is an atomic Fedora-based system, so install packages with `rpm-ostree` on the host, or with `toolbox` if you prefer keeping them containerized.
-
-```bash
-sudo rpm-ostree install cage wlr-randr waydroid
-```
-
-If you already manage Waydroid another way, make sure `cage` and `wlr-randr` are available in the environment where you run the script.
+Bazzite is an atomic Fedora-based system, but cage and wlr-randr is already installed. For Waydroid, you need install in Bazzite Portal or via ```ujust```.
 
 1. **Download the Script**  
    Download the `waydroid-cage.sh` file to your Desktop or any folder you prefer:
